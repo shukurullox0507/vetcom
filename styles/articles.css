@@ -1,7 +1,5 @@
-*{
-    box-sizing: border-box;
+body{
     margin: 0;
-    padding: 0;
 }
 .articles__header{
     background-color: #383174;
@@ -20,8 +18,7 @@
 
 .articles__main-content{
     width: 87.5vw;
-    margin: 0 auto;
-    margin-top: 4.16vw;
+    margin: 4.16vw auto 4.16vw auto;
     display: flex;
     flex-direction: column;
     gap: 1.04vw;

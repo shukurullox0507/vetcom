@@ -1,9 +1,6 @@
-*{
-    box-sizing: border-box;
+body{
     margin: 0;
-    padding: 0;
 }
-
 .structure__header{
     background-color: #383174;
     box-sizing: border-box;
@@ -21,8 +18,7 @@
 
 .structure__main-content{
     width: 87.5vw;
-    margin: 0 auto;
-    margin-top: 4.16vw;
+    margin: 4.16vw auto 4.16vw auto;
     display: flex;
     flex-direction: column;
     gap: 1.04vw;
@@ -83,4 +79,5 @@
     width: 100%;
     max-width: 0.3645vw;
     height: 0.57vw;
+    margin-top: 0.2083vw;
 }
