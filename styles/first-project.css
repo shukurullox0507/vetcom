@@ -15,10 +15,13 @@
 }
 
 body{
-    overflow: hidden;
+    background: url('../assets/background-image.png') center center/cover no-repeat;
+
+   overflow-x: hidden;
 }
 
-.header {
+.header-project {
+    width: 100vw;
     background-color:  #383174;;
     padding: 15px;
     color: white;
@@ -26,13 +29,9 @@ body{
     text-align: center;
     font-size: 22px;
     border-bottom: 5px solid #3c3f81;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+   
 }
-header h1 {
+.header-project h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-weight: 700;
@@ -40,7 +39,7 @@ header h1 {
     margin-left: 3%;
 }
 
-.scroll-container {
+/* .scroll-container {
     width: 99vw; 
     overflow-y: scroll;
     padding-right: 10px; 
@@ -50,8 +49,8 @@ header h1 {
     line-height: 32.68px;
     letter-spacing: 0.01em;
     color: #4D4477;
-    margin-bottom: 15px;
-    margin-top: 100px; 
+    margin-bottom: 0px;
+    margin-top: 10px; 
     max-height: calc(100vh - 100px);
 }
 
@@ -66,7 +65,7 @@ header h1 {
 
 .scroll-container::-webkit-scrollbar-track {
     background-color: #F1F0FB;
-}
+} */
 
 .image-section{
  padding: 43px;
@@ -109,4 +108,5 @@ header h1 {
     letter-spacing: 0.01em;
     color: #4D4477;
     margin-bottom: 15px;
+    padding-bottom: 8vh;
 }

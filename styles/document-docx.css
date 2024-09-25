@@ -7,14 +7,13 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    overflow: hidden;
+    background: url('../assets/background-image.png') center center/cover no-repeat;
+    overflow-x: hidden;
 }
 
 /* Container */
 .document-container {
-    max-width: 90%;
+    max-width: 86vw;
     margin: 50px auto;
     border: 2px solid #ddd;
     background-color: #F9FAFF;
@@ -31,11 +30,6 @@ body {
     text-align: center;
     font-size: 22px;
     border-bottom: 5px solid #3c3f81;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
 }
 .document-header h2 {
     font-family: 'Open Sans', sans-serif;
@@ -45,7 +39,7 @@ body {
     margin-left: 5%;
 }
 
-.scroll-container {
+/* .scroll-container {
     width: 99vw; 
     overflow-y: scroll;
     padding-right: 10px; 
@@ -71,7 +65,7 @@ body {
 
 .scroll-container::-webkit-scrollbar-track {
     background-color: #F1F0FB;
-}
+} */
 
 .document-item {
     display: flex;
