@@ -30,6 +30,7 @@ body {
     text-align: center;
     font-size: 22px;
     border-bottom: 5px solid #3c3f81;
+    margin-top: 6.3vh;  /*  ushbu code    */
 }
 .document-header h2 {
     font-family: 'Open Sans', sans-serif;

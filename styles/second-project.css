@@ -19,7 +19,7 @@ body{
    overflow-x: hidden;
 }
 
-.header {
+.header-project {
     width: 100vw;
     background-color:  #383174;;
     padding: 15px;
@@ -28,10 +28,10 @@ body{
     text-align: center;
     font-size: 22px;
     border-bottom: 5px solid #3c3f81;
-   
+    margin-top: 6.3vh; /* ushbu kod */
    
 }
-header h1 {
+.header-project h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     font-weight: 700;
