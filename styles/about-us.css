@@ -6,10 +6,11 @@
     background-color: #F9FAFF;
     width: 87.5vw;
     padding: 2.6vw 5.2vw;
-    margin: 35px auto 70px;
-    box-shadow: 0px 0px 15px 0px #00000040;
-    border-radius: 20px;
+    margin: 1.822vw auto 3.645vw auto;
+    box-shadow: 0px 0px 0.78125vw 0px #00000040;
+    border-radius: 1.041vw;
     word-break: break-all;
+    /* hyphens: auto; */
     box-sizing: border-box;
 }
 
