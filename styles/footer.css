@@ -3,9 +3,7 @@
 
 
 footer{
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
+    /* width: calc(100vw - 12vw); */
     display: flex;
     align-items: center;
     justify-content: space-between;

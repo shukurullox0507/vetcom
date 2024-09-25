@@ -5,7 +5,7 @@ header{
     width: calc(100vw - 200px);
     justify-content: space-between;
     align-items: center;
-    padding: 0px 3.75vw;
+    padding: 1.6vw 3.75vw;
 }
 header .logo{
     object-fit: contain;
@@ -20,6 +20,7 @@ header ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 header ul li{
     list-style: none;
