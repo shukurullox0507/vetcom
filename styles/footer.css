@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #383174;
+    padding: 4vw 6vw;
+}
+footer .left-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+footer .top{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+footer .top h2{
+    font-family: 'Open Sans';
+    font-size: 1.8vw;
+    font-weight: 600;
+    line-height: 2.55vw;
+    text-align: left; 
+    margin-left: 1.7vw;
+    color: #fff;
+}
+footer .top img {
+    width: 10.5vw;
+    object-fit: contain;
+}
+footer .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.6vw;
+}
+footer .bottom .title{
+    display: flex;
+    align-items: flex-end;
+    font-family:'Open Sans';
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 1.69vw;
+    text-align: left;    
+    color: #fff ;
+    margin-bottom: 1.35vw;
+}
+footer .adress{
+    width:32%;
+}
+
+.bottom p{
+    font-family: 'Open Sans';
+    font-size: 1.04vw;
+    font-weight: 300;
+    line-height: 1.4vw;
+    letter-spacing: -0.03em;
+    text-align: left;    
+    color: #b1b1b3;
+}
+footer .right-content ul li{
+ list-style: none;
+ margin-bottom: 1.3vw;
+}
+.right-content{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .right-content ul li a{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 1.25vw;
+    font-weight: 300;
+    line-height: 1.7vw;
+    text-align: left;    
+    color: #F9FAFF;
+}
