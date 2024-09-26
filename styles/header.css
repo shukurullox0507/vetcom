@@ -237,7 +237,7 @@ a .active{
 .search .input{
     background: transparent;
     font-size: 18px;
-    width: 5.5vw;
+    width: 11vw;
     border: 0;
     transition: width 0.3S ease;
 }
@@ -262,9 +262,7 @@ a .active{
    .search.active .input{
     width: 11vw;
    }
-   .search.active .btn{
-    transform: translatex(0vw);
-   }
+  
    .language-box{
     margin-left: 0.8vw;
     padding: 0.5vw 0.8vw;
