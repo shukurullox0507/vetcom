@@ -2,15 +2,14 @@
 
 
 .header-container{
-    height: 8.7vw;
-    width: calc(100vw - 7.5vw);
+    height: 8vw;
+    width: calc(100% - 7.5vw);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     top: 0;
     background-color: #fff;
-
 }
 header {
     position: fixed;
@@ -58,7 +57,7 @@ header li a{
     text-align: left;    
 }
 header li a:hover{
-    font-weight: 700;
+    /*  */
     text-decoration: underline;
     /* transition: font-weight `0.5s ease; */
 }
@@ -81,6 +80,9 @@ header .about-menu{
     transform: translateY(0px); /* Starting position for animation */
     transition: opacity 0.5s ease, transform 0.3s ease, visibility 0.3s;
 }
+ul{
+    padding: 0;
+}
 .about-menu ul{
     display: flex;
     flex-direction: column;
@@ -101,9 +103,6 @@ header .about-menu{
 .about:hover ul li{
     display: block;
 
-}
-.about:hover .main{
-    font-weight: 700;
 }
 .about:hover .about-menu{
     display: flex;
@@ -142,9 +141,7 @@ header .projects-menu-hidden{
 .projects:hover{
     text-decoration: underline;
 }
-.projects:hover .main{
-    font-weight: 700;
-}
+
 .projects:hover .projects-menu-hidden{
     display: block;
     opacity: 1;
@@ -183,11 +180,9 @@ header .documents-menu-hidden{
 
 .documents:hover{
     text-decoration: underline;
-    font-weight: 700;
+    
 }
-.documents:hover .main{
-    font-weight: 700;
-}
+
 .documents:hover .documents-menu-hidden{
     display: block;
     opacity: 1;
@@ -195,8 +190,9 @@ header .documents-menu-hidden{
     transform: translateY(0); 
 }
 
+
 header .news-menu-hidden{
-    width: 15vw;
+    width: 9vw;
     position: absolute;
     z-index: 2;
     right: -120%;
@@ -224,11 +220,9 @@ header .news-menu-hidden{
 
 .news:hover{
     text-decoration: underline;
-    font-weight: 700;
+    
 }
-.news:hover .main{
-    font-weight: 700;
-}
+
 .news:hover .news-menu-hidden{
     display: block;
     opacity: 1;
@@ -347,6 +341,3 @@ a .active{
   .custom-dropdown:hover .dropdown-content {
     display: block;
   }
-  
-
-  
