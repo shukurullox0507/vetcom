@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .header-container{
     height: 8vw;
     width: calc(100% - 7.5vw);
@@ -289,7 +293,7 @@ a .active{
     display: inline-block;
    }
   .dropdown-item-selected {
-    width: 100%;
+    /* width: 100%; */
     padding: 0.5vw 0.8vw;
     display: flex;
     align-items: center;
@@ -325,15 +329,15 @@ a .active{
   }
   .dropdown-content.active {
     display: block;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
   }
 
-  .dropdown-content.active .dropdown-item-selected {
-    border-radius:  0;
+  .language-box.active .dropdown-item-selected {
+    border-radius:15px 15px 0 0;
   }
   
   .dropdown-content .dropdown-item {
-    padding: 0.5vw 0.8vw;
+    padding: 0.5vw 0.71vw;
     display: flex;
     align-items: center;
     cursor: pointer;

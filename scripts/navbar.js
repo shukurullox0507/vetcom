@@ -13,4 +13,5 @@ const dropdownBar = document.querySelector('.dropdown-content')
 
 langBar.addEventListener('click',()=>{
   dropdownBar.classList.toggle('active')
+  langBar.classList.toggle('active')
 })
