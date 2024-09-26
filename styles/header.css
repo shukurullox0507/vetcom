@@ -12,7 +12,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100vw - 200px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,10 +22,16 @@ header {
     transition: background-color 0.3s ease;
 }
 
+
 header.scrolled {
+    width: 100vw ;
     background-color: #fff; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 } /* ... */
+
+header.scrolled .right-box{
+    width: 25%;
+}
 
 header .logo{
     object-fit: contain;
@@ -33,7 +39,7 @@ header .logo{
 }
 header nav {
     display: flex;
-    width: 60%;
+    width: 50%;
 }
 header ul{
     width: 100%;
@@ -280,7 +286,7 @@ a .active{
    }
    
    .search.active .input{
-    width: 11vw;
+    width: 5vw;
    }
   
    .language-box{
