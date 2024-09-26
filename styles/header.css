@@ -11,7 +11,7 @@
     top: 0;
     background-color: #fff;
 }
-header {
+#top-navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,18 +26,18 @@ header {
 }
 
 
-header.scrolled {
+#top-navbar.scrolled {
     background-color: #fff; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-header .logo{
+#top-navbar .logo{
     object-fit: contain;
     width: 5.05vw;
 }
-header nav {
+#top-navbar nav {
     display: flex;
 }
-header nav #menus{
+#top-navbar nav #menus{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -45,10 +45,10 @@ header nav #menus{
     padding: 0;
     gap: 3vw;
 }
-header ul li{
+#top-navbar ul li{
     list-style: none;
 }
-header li a{
+#top-navbar li a{
     text-decoration: none;
     font-family: 'Open Sans';
     font-size: 1.04vw;
@@ -56,17 +56,17 @@ header li a{
     line-height: 1.41vw;
     text-align: left;    
 }
-header li a:hover{
+#top-navbar li a:hover{
     /*  */
     text-decoration: underline;
     /* transition: font-weight `0.5s ease; */
 }
 
-header .about{
+#top-navbar .about{
     position: relative;
 
 }
-header .about-menu{
+.about-menu{
     /* display: none; */
     position: absolute;
     z-index: 2;
@@ -111,7 +111,7 @@ ul{
     visibility: visible;
     transform: translateY(0); 
 }
-header .projects-menu-hidden{
+.projects-menu-hidden{
     /* display: none; */
     position: absolute;
     z-index: 2;
@@ -148,7 +148,7 @@ header .projects-menu-hidden{
     visibility: visible;
     transform: translateY(0); 
 }
-header .documents-menu-hidden{
+.documents-menu-hidden{
     width: 16vw;
     position: absolute;
     z-index: 2;
@@ -191,8 +191,8 @@ header .documents-menu-hidden{
 }
 
 
-header .news-menu-hidden{
-    width: 9vw;
+.news-menu-hidden{
+    width: 13vw;
     position: absolute;
     z-index: 2;
     right: -120%;
@@ -319,9 +319,17 @@ a .active{
     box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
     z-index: 1;
     border-radius: 15px;
+    box-sizing: border-box;
+    background: #413973;
+
   }
-  .dropdown-content .active{
+  .dropdown-content.active {
     display: block;
+    border-radius: 15px;
+  }
+
+  .dropdown-content.active .dropdown-item-selected {
+    border-radius:  0;
   }
   
   .dropdown-content .dropdown-item {
@@ -329,7 +337,8 @@ a .active{
     display: flex;
     align-items: center;
     cursor: pointer;
-    background: #413973;
+    /* border-radius: 15px; */
+
   }
   
   .dropdown-content .dropdown-item svg {
