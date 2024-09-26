@@ -1,5 +1,7 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .articles__header{
     background-color: #383174;
@@ -43,7 +45,7 @@ body{
 .articles__main-card-left img{
     width: 19.0625vw;
     height: 12.5vw;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .articles__main-card-right{

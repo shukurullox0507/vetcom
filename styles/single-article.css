@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .single-article{
     background-color: #F9FAFF;
     width: 87.5vw;
@@ -23,6 +28,8 @@
     line-height: 1.2765625vw;
     color: #383174;
     letter-spacing: 1%;
+    margin-bottom: 2.604vw;
+
 }
 
 .single-article__text{

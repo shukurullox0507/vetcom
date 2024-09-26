@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .single-new{
     background-color: #F9FAFF;
     width: 87.5vw;
@@ -22,7 +27,7 @@
 .single-new__img img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .single-new__title h2{
@@ -43,6 +48,7 @@
 
 .single-new__text{
     width: 81.45vw;
+    margin-top: 2.604vw;
 }
 .single-new__text p{
     color: #4D4477;

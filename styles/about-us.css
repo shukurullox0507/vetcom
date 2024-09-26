@@ -1,7 +1,11 @@
 :root {
     --main-color: #383174;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .about-us__wrapper {
     background-color: #F9FAFF;
     width: 87.5vw;
@@ -22,10 +26,15 @@
 }
 
 .about-us__name, .about-us__date, .about-us__director {
+    margin-top: 1.041vw;
     color: var(--main-color);
     font-weight: 600;
     font-size: 1.25vw;
     line-height: 1.7vw;
+}
+
+.about-us__director{
+    margin-bottom: 1.041vw;
 }
 
 .about-us__name span, .about-us__date span, .about-us__director span {
@@ -33,6 +42,7 @@
 }
 
 .about-us__mission, .about-us__operations {
+    margin-top: 0.52vw;
     color: var(--main-color);
     font-size: 1.25vw;
     line-height: 1.7vw;

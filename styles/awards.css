@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .awards{
     width: 87.5vw;
     margin: 1.822vw auto 3.645vw auto;
