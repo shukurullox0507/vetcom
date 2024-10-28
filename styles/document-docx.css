@@ -134,34 +134,61 @@ body {
 .document-preview::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 250px;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
     z-index: 1;
 }
 
 
 .document-preview h3 {
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    text-align: center;
-    font-size: 1rem;
+    font-size: 18px;
     color: #0c0c0c;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .document-preview p {
-    width: 62vw;
-    text-align: center;
-    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0.01em;
-    text-align: left;
     color: #4D4477;
-   
+    line-height: 26px;
+    text-align: left;
+   padding-left: 35px;
+   padding-right: 35px;
+}
+
+.gerb-image {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Document Details */
+.document-details {
+    display: flex;
+    justify-content: space-between; /* Aligns date on the left and number on the right */
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,1)); /* Adding light gradient as per the image */
+    padding: 10px 40px; /* Add some padding for spacing */
+    border-radius: 8px; /* Optional: Rounding the corners to match the image */
+}
+
+.document-details span {
+    display: inline-block;
+}
+
+.doc-number {
+    text-align: right;
+    font-weight: 600;
 }
