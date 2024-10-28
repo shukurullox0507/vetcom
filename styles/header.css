@@ -38,6 +38,10 @@
     object-fit: contain;
     width: 5.05vw;
 }
+#top-navbar .burger{
+display: none;
+color: #413973;
+}
 #top-navbar nav {
     display: flex;
 }
@@ -246,7 +250,7 @@ a .active{
 }
 .search{
     position: relative;
-    height: 2.5vw;
+    /* height: 2.5vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,15 +260,16 @@ a .active{
     padding: 0 0vw 0 3vw;
 
 }   
+
 .search .input{
     background: transparent;
     font-size: 18px;
-    width: 11vw;
+    /* width: 11vw; */
     border: 0;
     transition: width 0.3S ease;
 }
 
-.btn{
+/* .btn{
     background-color: transparent;
     border: 0;
     border-radius: 15px;
@@ -276,7 +281,7 @@ a .active{
     height: 2.5vw;
     width: 2.6vw;
     transition: transform 0.3s ease;
-   }
+   } */
    .btn:focus, .input:focus{
     outline: none;
    }
@@ -354,3 +359,31 @@ a .active{
   .custom-dropdown:hover .dropdown-content {
     display: block;
   }
+
+@media only screen and (max-width: 1200px) {
+    .logo{
+        display: none;
+    }
+    .header-container #top-navbar .burger{
+        display: block;
+    }
+    .header-container #top-navbar #menus{
+        display: none;
+    }
+    .right-box .search .input::placeholder{
+        display: none;
+        /* color: transparent; */
+    }
+    .search .input{
+        padding: 1.7vw 3.3vw;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .search svg{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+
