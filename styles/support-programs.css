@@ -100,3 +100,41 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    .program-header {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .program-header h2 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 0;
+    }
+    
+    .program-container {
+        width: 90vw;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .program-content h3 {
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        
+    }
+    
+    .program-content .date {
+        font-size: 6px;
+        margin-bottom: 10px;
+    }
+    
+    .program-content p {
+        width: 100%;
+        font-size: 9px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+}
