@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --main-color: #413973;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open-sans',sans-serif;
+}
+.mobile-header {
+    width: 77.94vw;
+    max-height: 100vh;
+    height: auto;
+    overflow-y: scroll;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease; /* Smooth slide-in effect */
+    z-index: 100;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    /* padding: 3vw 6.41vw; */
+
+}
+
+@media only screen and (max-width:900px){
+    .mobile-header {
+        display: flex;
+    }
+}
+
+.mobile-header.open {
+    transform: translateX(0); /* Slide into view */
+}
+
+.mobile-header__close{
+    display: flex;
+    align-items: center;
+    padding: 3.5vw 0 3.5vw 6vw;
+}
+
+.mobile-header__close-btn{
+    border: none;
+    background: none;
+    width: 2.82vw;
+}
+.mobile-header__close-btn img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.mobile-header__head{
+    width: 100%;
+    height: 25vw;
+    padding: 3vw 0;
+    padding-left: 6vw;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    gap: 3.07vw;
+}
+.mobile-header__head-logo{
+    width: 17.94vw;
+    aspect-ratio: 1/1;
+}
+.mobile-header__head-logo img{
+    width: 100%;
+    object-fit: contain;
+}
+.mobile-header__head p{
+    width: 45.64vw;
+    font-size: 3.07vw;
+    color: white;
+    font-weight: 700;
+    line-height: 4.1vw;
+}
+
+.mobile-header__links{
+    padding-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin-bottom: 5vw;
+}
+.mobile-header__links.first{
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+}
+.mobile-header__links.fifth{
+    margin-bottom: 7vw;
+}
+.mobile-header__links-header{
+    margin-bottom: -1vw;
+    color: var(--main-color);
+    font-size: 4.27vw;
+}
+.mobile-header__links-header a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.mobile-header__links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    list-style: none;
+    font-size: 4.27vw;
+}
+.mobile-header__links-list a{
+    text-decoration: none;
+    color: var(--main-color);
+}

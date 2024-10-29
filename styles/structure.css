@@ -12,6 +12,7 @@
 @media (max-width: 640px){
     .structure__header{
         padding: 1.28vw 0;
+        margin-top: 4.5vw;
     }
 }
 
@@ -26,7 +27,7 @@
 
 @media (max-width: 640px){
     .structure__header h1{
-        font-size: 3.07;
+        font-size: 3.07vw;
         line-height: 4.1vw;
     }
 }
