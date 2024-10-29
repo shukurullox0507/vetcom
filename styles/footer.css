@@ -83,3 +83,91 @@ footer .right-content ul li a{
     text-align: left;    
     color: #F9FAFF;
 }
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6vw 4vw;
+    }
+
+    footer .left-content {
+        width: 100%;
+    }
+
+    footer .top {
+        flex-direction: row; 
+        align-items: center; 
+        width: 90%;
+    }
+
+    footer .top h2 {
+        font-size: 13px;
+        line-height: 6vw;
+        margin-left: 1.5vw; 
+        font-weight: 700;
+    }
+
+    footer .top img {
+        width: 18vw;
+        margin: 6px;
+    }
+
+    footer .bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 5vw;
+        gap: 2vw;
+    }
+
+    footer .bottom .title {
+        font-size: 4vw;
+        margin-bottom: 1.5vw;
+        width: auto;
+    }
+
+    /* Align icons and text in address, contacts, and social sections */
+    footer .adress, 
+    footer .contacts, 
+    footer .socials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .adress .title,
+    footer .contacts .title,
+    footer .socials .title {
+        display: flex;
+        align-items: center; /* Center-aligns icons with text */
+        font-size: 10px;
+        font-weight: 600;
+        gap: 5px; /* Adds space between icon and text */
+    }
+
+    footer .adress .title svg,
+    footer .contacts .title svg,
+    footer .socials .title svg {
+        width: 16px; /* Adjust icon size for better alignment */
+        height: 16px;
+        vertical-align: middle;
+    }
+
+    .bottom p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        margin-top: 1vw;
+    }
+
+    .right-content {
+        display: none; 
+    }
+
+    .contacts p,
+    .socials p,
+    .adress p {
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
