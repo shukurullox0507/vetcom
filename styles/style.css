@@ -181,7 +181,7 @@
 }
 .press-section .swiper{
     width: 100%;
-    height: 500px;
+    height: 35vw;
 }
 
 .press-section .swiper-slide{
@@ -199,7 +199,7 @@
     height: 90%;
     display: flex;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     justify-content: end;
     flex-direction: column;
     padding: 1.1vw 2.6vw;
