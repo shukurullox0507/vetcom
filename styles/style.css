@@ -67,9 +67,11 @@
 .hero-logo{
     width: 13vw;
     object-fit: contain;
+    border-right: 1px solid white;
+    padding-right: 50px;
 }
 .hero-section-content h1{
-    width: 70%;
+    width: 85%;
     font-family: 'Open Sans';
     font-size: 2.5vw;
     font-weight: 800;
@@ -82,9 +84,10 @@
     display: flex;
 }
 .second-logo{
-    margin-left: 10px;
+    width: 27.6vw;
+    margin-left: 50px;
     object-fit: contain;
-    display: none;
+    display: block;
 }
 .second-section{
     display: flex;
@@ -116,7 +119,7 @@
     flex-direction: column;
     box-shadow: 0px 0px 10px 0px #00000040;
     padding: 3.6vw 2.3vw;
-    border-radius: 20px;
+    border-radius: 5px;
     position: relative;
 }
 .second-section .left-content{
@@ -125,7 +128,7 @@
     flex-direction: column;
     box-shadow: 0px 0px 10px 0px #00000040;
     padding: 3.6vw 2.3vw;
-    border-radius: 20px;
+    border-radius: 5px;
     position: relative;
 }
 .right-content .content{
@@ -308,15 +311,22 @@
     column-gap: 1.5vw;
 }
 .article-content .article-title{
+    display: block;
+    /* width: 95%; */
+    word-break: break-word;
     font-family: 'Open Sans';
     font-size: 1.25vw;
     font-weight: 600;
     line-height: 1.7vw;
     text-align: left;   
     color: #4D4477; 
-    margin-bottom: 11px;   
+    margin-bottom: 11px;
+    overflow-wrap: break-word;   
 }
 .article-description{
+    display: block;
+    /* width: 95%; */
+    word-break: break-word;
     font-family: 'Open Sans';
     font-size: 0.9vw;
     font-weight: 400;
@@ -324,6 +334,7 @@
     letter-spacing: 0.01em;
     text-align: left;
     margin-top: 11px;
+    overflow-wrap: break-word;
     
 }
 .article .more-btn{
@@ -425,12 +436,19 @@
     color: #4D4477;
 }
 
+.swiper-pagination-press {
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .swiper-pagination-link {
     margin-top: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 @media (max-width: 760px){
     .main-container{
@@ -442,13 +460,15 @@
     .hero-section-content{
         background-size: cover;
     }
-    .second-logo{
-        display: block;
-    }
     .hero-logo{
-        border-right: 1px solid white;
         padding-right: 10px;
     }
+    .second-logo{
+        display: block;
+        margin-left: 10px;
+        width: 29vw;
+    }
+    
     .press-section .swiper-slide-content span{
         font-size: 7px;
         line-height: 9.53px;
@@ -461,8 +481,12 @@
         font-size: 5px;
         line-height: 6.81px;
     }
-    .press-section .swiper-pagination{
-        display: none;
+    .press-section .swiper-pagination-press{
+        /* position: absolute;
+        bottom: -50px;
+        left: 50%; */
+        margin-top: 20px !important;
+        size: 5px;
     }
     .press-section .more-btn svg{
         width: 10px;
@@ -507,23 +531,31 @@
     }
     .article .article-description{
         display: block;
-        width: 95%;
+        /* width: 95%; */
         font-size: 8px;
         font-weight: 300;
         line-height: 10.89px;
         text-align: left;
-        word-break: break-all;
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
     .article .article-content .text-box .article-title{
         display: block;
-        width: 95%;
+        /* width: 95%; */
         font-size: 8px;
         font-weight: 600;
         line-height: 10.89px;
         text-align: left;  
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
     .swiper-pagination-link{
-        display: none;
+        margin-top: 20px !important;
+        size: 5px;
+    }
+    .swiper-pagination-bullet{
+        width: 5px !important;
+        height: 5px !important;
     }
     .links-section h2{
         font-size: 3vw;
@@ -538,7 +570,7 @@
         line-height: 4.1vw;
     }
     .second-section h2{
-        font-size: 3vw;
+        font-size: 3vw; 
         line-height: 4.1vw;
     }
     .more-btn{
