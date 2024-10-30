@@ -413,7 +413,7 @@ a .active{
        }
        
        .search.active .input{
-        width: 64vw;
+        width: 60vw;
        }
        .search.active .btn{
         left: 0;
