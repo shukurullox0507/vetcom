@@ -69,13 +69,22 @@
     object-fit: contain;
 }
 .hero-section-content h1{
-    width: 95%;
+    width: 70%;
     font-family: 'Open Sans';
     font-size: 2.5vw;
     font-weight: 800;
     line-height: 3.4vw;
     text-align: center;
     color: #ffff;
+    margin-top: 12px;
+}
+.logo-images{
+    display: flex;
+}
+.second-logo{
+    margin-left: 10px;
+    object-fit: contain;
+    display: none;
 }
 .second-section{
     display: flex;
@@ -191,7 +200,7 @@
     align-items: flex-end;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 5px !important;
 }
 .press-section .swiper-slide-content{
     background-image:  linear-gradient(to bottom, transparent 0%, #fff 70%), url(../assets/center-swiper.png);
@@ -204,7 +213,7 @@
     flex-direction: column;
     padding: 1.1vw 2.6vw;
     box-shadow: 0px 0px 10px 0px #00000040;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .press-section .swiper-slide-content .bottom-content{
     width: 100%;
@@ -240,7 +249,7 @@
     color: #4D4477;
     width: 100%;
     justify-content: end;
-    margin-top: 1.8vw;
+    /* margin-top: 1.8vw; */
 }
 .press-section .swiper-slide-active {
     opacity: 1;
@@ -287,7 +296,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px 0px #00000040;
-    border-radius: 20px;
+    border-radius: 5px;
     background: #F9FAFF;
     position: relative;
     margin-bottom: 1vw;
@@ -364,7 +373,7 @@
 .links-section .swiper-slide-content {
     width: 21vw;
     height: 11vw;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 10px 0px #00000040;
@@ -421,4 +430,118 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 760px){
+    .main-container{
+        margin-top: 5.1vw;
+    }
+    .hero-section-container{
+        height: 48vw;
+    }
+    .hero-section-content{
+        background-size: cover;
+    }
+    .second-logo{
+        display: block;
+    }
+    .hero-logo{
+        border-right: 1px solid white;
+        padding-right: 10px;
+    }
+    .press-section .swiper-slide-content span{
+        font-size: 7px;
+        line-height: 9.53px;
+        color: #4D4477;
+    }
+    .press-section .swiper-slide-content .bottom-content{
+        height: 10px;
+    }
+    .press-section .swiper-slide-content .bottom-content p{
+        font-size: 5px;
+        line-height: 6.81px;
+    }
+    .press-section .swiper-pagination{
+        display: none;
+    }
+    .press-section .more-btn svg{
+        width: 10px;
+    }
+    .press-section .more-btn{
+        line-height: 5px;
+    }
+    .press-section .swiper-slide-active {
+        opacity: 1;
+        z-index: 2;
+        transform: scale(1.1);
+        width: 45% !important;
+        height: 95% !important;
+    }
+    .press-section .swiper-slide:not(.swiper-slide-active) {
+        opacity: 0.6; 
+        transform: scale(0.9); 
+        height: 95%;
+        width: 40% !important;
+        z-index: 1; 
+        margin-left: -13%; 
+        margin-right: -13%; 
+    }
+    .press-section .swiper-slide-content span{
+        line-height: 2.4vw;
+        font-size: 1.7vw;
+    }
+    .articles-section .article-content img{
+        width: 19vw;
+    }
+    .article{
+        padding: 6.36px 15px;
+    }
+    .article .more-btn{
+        height: 10px;
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+    }
+    .article .more-btn svg{
+        width: 8px;
+    }
+    .article .article-description{
+        display: block;
+        width: 95%;
+        font-size: 8px;
+        font-weight: 300;
+        line-height: 10.89px;
+        text-align: left;
+        word-break: break-all;
+    }
+    .article .article-content .text-box .article-title{
+        display: block;
+        width: 95%;
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 10.89px;
+        text-align: left;  
+    }
+    .swiper-pagination-link{
+        display: none;
+    }
+    .links-section h2{
+        font-size: 3vw;
+        line-height: 4.1vw;
+    }
+    .articles-section h2{
+        font-size: 3vw;
+        line-height: 4.1vw;
+    }
+    .press-section h2{
+        font-size: 3vw;
+        line-height: 4.1vw;
+    }
+    .second-section h2{
+        font-size: 3vw;
+        line-height: 4.1vw;
+    }
+    .more-btn{
+        height: 11px;
+    }
 }

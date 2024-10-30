@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    padding: 1.6vw 3.75vw;
+    padding: 1.6vw 3.75vw ;
     background: transparent;
     transition: background-color 0.3s ease;
 }
@@ -38,10 +38,6 @@
     object-fit: contain;
     width: 5.05vw;
 }
-#top-navbar .burger{
-display: none;
-color: #413973;
-}
 #top-navbar nav {
     display: flex;
 }
@@ -52,6 +48,9 @@ color: #413973;
     align-items: center;
     padding: 0;
     gap: 3vw;
+}
+.burger{
+    display: none;
 }
 #top-navbar ul li{
     list-style: none;
@@ -250,7 +249,7 @@ a .active{
 }
 .search{
     position: relative;
-    /* height: 2.5vw; */
+    height: 2.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,18 +257,17 @@ a .active{
     background: #FBFBFE;
     border-radius: 15px;
     padding: 0 0vw 0 3vw;
-
 }   
-
 .search .input{
     background: transparent;
     font-size: 18px;
-    /* width: 11vw; */
+    width: 11vw;
     border: 0;
     transition: width 0.3S ease;
 }
 
-/* .btn{
+
+.btn{
     background-color: transparent;
     border: 0;
     border-radius: 15px;
@@ -277,25 +275,22 @@ a .active{
     font-size: 24px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1vw;
     height: 2.5vw;
-    width: 2.6vw;
+    width: 5vw;
     transition: transform 0.3s ease;
-   } */
+   }
    .btn:focus, .input:focus{
     outline: none;
    }
-   
-   .search.active .input{
-    width: 5vw;
-   }
+
   
    .language-box{
-    margin-left: 0.8vw;
-    padding: 0.5vw 0.8vw;
+    /* margin-left: 0.8vw; */
+    /* padding: 0.5vw 0.8vw; */
+    margin-left: 15px;
     border-radius: 15px;
     position: relative;
-    display: inline-block;
    }
   .dropdown-item-selected {
     /* width: 100%; */
@@ -309,9 +304,9 @@ a .active{
   }
   .dropdown-item, .dropdown-item-selected span{
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 1.04vw;
     font-weight: 400;
-    line-height: 27.24px;
+    line-height:1.4vw;
     text-align: left;    
     color: #ffff;
   }
@@ -338,11 +333,11 @@ a .active{
   }
 
   .language-box.active .dropdown-item-selected {
+    /* padding:5px 9.5px; */
     border-radius:15px 15px 0 0;
   }
-  
   .dropdown-content .dropdown-item {
-    padding: 0.5vw 0.71vw;
+    padding: 0.5vw 0.57vw;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -359,31 +354,78 @@ a .active{
   .custom-dropdown:hover .dropdown-content {
     display: block;
   }
-
-@media only screen and (max-width: 1200px) {
+  
+  @media (max-width:1200px) {
+    .dropdown-item, .dropdown-item-selected span{
+        font-size: 3vw;
+        line-height: 4.1vw;
+    }
+    .burger{
+        display: block;
+    }
     .logo{
         display: none;
-    }
-    .header-container #top-navbar .burger{
-        display: block;
     }
     .header-container #top-navbar #menus{
         display: none;
     }
-    .right-box .search .input::placeholder{
-        display: none;
-        /* color: transparent; */
+    .search .input::placeholder{
+        visibility: hidden;
+        width: 0;
     }
-    .search .input{
-        padding: 1.7vw 3.3vw;
-    }
-}
-
-@media only screen and (max-width: 780px){
-    .search svg{
-        width: 3vw;
-        height: 3vw;
-    }
-}
-
-
+    .search{
+        position: relative;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+       .search .input{
+        background: transparent;
+        font-size: 18px;
+        border-radius: 15px;
+        padding: 6px 12px;
+        height: 25px;
+        width: 25px;
+        transition: width 0.3S ease;
+       }
+       .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #fff; */
+        border: 0;
+        cursor: pointer;
+        font-size: 5px;
+        position: absolute;
+        top: 0;
+        left: 20%;
+        height: 25px;
+        width: 25px;
+        transition: transform 0.3s ease;
+       }
+       .btn svg{
+        width: 4vw;
+        height: 4vw;
+       }
+       .btn:focus, .input:focus{
+        outline: none;
+       }
+       
+       .search.active .input{
+        width: 64vw;
+       }
+       .search.active .btn{
+        left: 0;
+       }
+       .language-box svg{
+        width: 10px;
+        height: 10px;
+       }
+       .language-box .dropdown-item-selected{
+        padding: 4.7px 9.19px;
+       }
+       .language-box .dropdown-item{
+        padding: 4.7px 8.3px;
+       }
+  }
