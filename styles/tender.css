@@ -183,6 +183,7 @@ body {
 @media (max-width: 480px) {
     .program-header{
         padding: 5px;
+        margin-top: 2vw;
     }
     .program-header h2 {
         font-size: 14px;

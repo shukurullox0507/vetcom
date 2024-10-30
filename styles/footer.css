@@ -63,6 +63,16 @@ footer .adress{
     text-align: left;    
     color: #b1b1b3;
 }
+.bottom p a{
+    font-family: 'Open Sans';
+    font-size: 1.04vw;
+    font-weight: 300;
+    line-height: 1.4vw;
+    letter-spacing: -0.03em;
+    text-align: left;    
+    color: #b1b1b3;
+    text-decoration: none;
+}
 footer .right-content ul li{
  list-style: none;
  margin-bottom: 1.3vw;
@@ -82,6 +92,15 @@ footer .right-content ul li a{
     line-height: 1.7vw;
     text-align: left;    
     color: #F9FAFF;
+}
+.contacts p,
+.socials p {
+    line-height: 1.8em;
+}
+
+.socials p:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -169,5 +188,12 @@ footer .right-content ul li a{
     .adress p {
         font-size: 10px;
         font-weight: 300;
+    }
+    .socials p a{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .socials p a:hover{
+        text-decoration: underline;
     }
 }

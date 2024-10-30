@@ -196,6 +196,11 @@ body {
 @media (max-width: 768px) {
     .document-header h2{
         font-size: 17px;
+       
+    }
+    .document-header{
+        padding: 1vw;
+        margin-top: 2vw;
     }
     .document-container {
         padding: 5px;
