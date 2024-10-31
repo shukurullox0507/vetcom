@@ -16,6 +16,7 @@
 @media (max-width: 640px) {
     .news__header {
         padding: 1.28vw 0;
+        margin-top: 3.3vw;
     }
 }
 
