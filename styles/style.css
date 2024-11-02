@@ -73,12 +73,12 @@
 .hero-section-content h1{
     width: 85%;
     font-family: 'Open Sans';
-    font-size: 2.5vw;
+    font-size: 1.8vw;
     font-weight: 800;
-    line-height: 3.4vw;
+    line-height: 2.48vw;
     text-align: center;
     color: #ffff;
-    margin-top: 12px;
+    margin-top: 2.6vw;
 }
 .logo-images{
     display: flex;

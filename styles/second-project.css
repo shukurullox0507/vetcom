@@ -78,6 +78,7 @@ body{
     width: 83vw;
     height: auto;
     display: block;
+    border-radius: 1.5vw;
 }
 
 .project-details{
