@@ -71,6 +71,7 @@ body{
     height: 84vh;
     display: block;
     border-radius: 1.5vw;
+    object-fit: cover;
 }
 
 /* .container {

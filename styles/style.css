@@ -206,7 +206,6 @@
     border-radius: 5px !important;
 }
 .press-section .swiper-slide-content{
-    background-image:  linear-gradient(to bottom, transparent 0%, #fff 70%), url(../assets/center-swiper.png);
     width:100%;
     height: 90%;
     display: flex;
