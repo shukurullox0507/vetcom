@@ -68,8 +68,9 @@ body{
 
 .image-section img {
     width: 83vw;
-    height: auto;
+    height: 84vh;
     display: block;
+    border-radius: 1.5vw;
 }
 
 /* .container {
