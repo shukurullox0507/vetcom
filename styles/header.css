@@ -319,7 +319,7 @@ a .active{
   .dropdown-item-selected svg {
     border-radius: 50%;
     margin-left: 10px;
-    width: 1vw;
+    width: 1.05vw;
   }
 
   .dropdown-content {
