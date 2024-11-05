@@ -299,7 +299,7 @@ a .active{
     position: relative;
    }
   .dropdown-item-selected {
-    /* width: 100%; */
+    
     padding: 0.5vw 0.8vw;
     display: flex;
     align-items: center;
@@ -315,6 +315,8 @@ a .active{
     line-height:1.4vw;
     text-align: left;    
     color: #ffff;
+    margin-right: 0.20vw;
+    box-sizing: border-box;
   }
   .dropdown-item-selected svg {
     border-radius: 50%;
@@ -323,6 +325,7 @@ a .active{
   }
 
   .dropdown-content {
+    
     display: none;
     position: absolute;
     background-color: #fff;
@@ -331,8 +334,15 @@ a .active{
     border-radius: 15px;
     box-sizing: border-box;
     background: #413973;
-
+    
+ 
   }
+  .dropdown-item span {
+    margin: 0.18vw;
+  }
+  .language-box img {
+    width: 1.4vw; 
+}
   .dropdown-content.active {
     display: block;
     border-radius: 0 0 15px 15px;
@@ -427,10 +437,15 @@ a .active{
        .search.active .btn{
         left: 0;
        }
-       .language-box svg{
-        width: 10px;
-        height: 10px;
-       }
+        .language-box img {
+            width: 18px;
+        }
+    
+    
+        .language-box img {
+            width: 15px; 
+        }
+    
        .language-box .dropdown-item-selected{
         padding: 4.7px 9.19px;
        }
