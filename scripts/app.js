@@ -7,7 +7,6 @@ btn.addEventListener("click", () => {
     input.focus();
     updateSelectedLanguage();
 });
-
 let currentLanguage = 'ru';
 
 function updateSelectedLanguage() {
@@ -28,6 +27,10 @@ function updateSelectedLanguage() {
         item.classList.remove("selected");
     });
     document.querySelector(`.dropdown-item[onclick="selectLanguage('${currentLanguage}')"]`).classList.add("selected");
+    
+    // Update the URL without reloading the page
+    const newUrl = `${window.location.origin}${window.location.pathname}?lang=${currentLanguage}`;
+    window.history.replaceState(null, '', newUrl);
 }
 
 function selectLanguage(language) {
