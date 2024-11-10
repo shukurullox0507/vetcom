@@ -7,7 +7,7 @@ btn.addEventListener("click", ()=>{
  input.focus()
 })
 
-let currentLanguage = 'ru';
+let currentLanguage = 'uz';
 
 function updateSelectedLanguage() {
     const selectedContainer = document.querySelector(".dropdown-item-selected");
@@ -48,10 +48,10 @@ function detectLanguageFromUrl() {
     if (['ru', 'en', 'uz'].includes(languageSegment)) {
         currentLanguage = languageSegment;
     } else {
-        pathSegments[1] = 'ru';
+        pathSegments[1] = 'uz';
         const defaultUrl = `${window.location.origin}${pathSegments.join('/')}`;
         window.history.replaceState({}, '', defaultUrl);
-        currentLanguage = 'ru';
+        currentLanguage = 'uz';
     }
 
     updateSelectedLanguage();

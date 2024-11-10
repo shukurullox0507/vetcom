@@ -28,7 +28,9 @@
     background: transparent;
     transition: background-color 0.3s ease;
 }
-
+.logo-images a{
+    color:transparent;
+}
 
 #top-navbar.scrolled {
     background-color: #fff; 
@@ -36,7 +38,7 @@
 }
 #top-navbar .logo{
     object-fit: contain;
-    width: 5.05vw;
+    width: 6.05vw;
     padding-right: 20px;
     border-right: 1px solid black;
 }
@@ -61,13 +63,14 @@
 #top-navbar ul li{
     list-style: none;
 }
-#top-navbar li a{
+#menus li a{
     text-decoration: none;
     font-family: 'Open Sans';
     font-size: 1.04vw;
     font-weight: 400;
     line-height: 1.41vw;
-    text-align: left;    
+    text-align: left;  
+    color: #49447D;  
 }
 #top-navbar li a:hover{
     /*  */
@@ -79,6 +82,7 @@
     position: relative;
 
 }
+
 .about-menu{
     /* display: none; */
     position: absolute;
