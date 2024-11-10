@@ -300,5 +300,37 @@
     </footer> 
     <script src="../../scripts/app.js"></script>
     <script src="../../scripts/navbar.js"></script>
+    <script>
+        function wrapItemsInLink() {
+          const items = document.querySelectorAll(
+            ".articles__main-card"
+          );
+          const isMobile = window.innerWidth <= 640;
+  
+          items.forEach((item) => {
+            const parent = item.parentElement;
+  
+            // Remove previous wrapper links if they exist (for resizing cases)
+            if (parent.tagName === "A" && !isMobile) {
+              const wrapper = parent.parentElement;
+              wrapper.replaceChild(item, parent);
+            }
+  
+            // Wrap item in <a> tag if on mobile
+            if (isMobile && parent.tagName !== "A") {
+              const link = document.createElement("a");
+              link.href = "./single-article.html";
+              link.appendChild(item.cloneNode(true));
+              parent.replaceChild(link, item);
+            }
+          });
+        }
+  
+        // Initial call
+        wrapItemsInLink();
+  
+        // Re-check on window resize
+        window.addEventListener("resize", wrapItemsInLink);
+      </script>
 </body>
 </html>
