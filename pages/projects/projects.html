@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <link rel="stylesheet" href="../../styles/project.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/mobile-header.css">
+</head>
+<body>
+    <div class="header-container">
+        <header id="top-navbar">
+            <svg id="burger" class="burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18"/></svg>
+            <div class="logo-images">
+                <img src="../../assets/logo.png" alt="logo image" class="logo">
+                <img src="../../assets/seond-logo.png" alt="" class="second-logo-header">
+            </div>
+                <nav>
+                  <ul id="menus">
+                    <li><a href="../../index.html">Главная</a></li>
+                    <li class="about">
+                        <a href="#" class="main">О комитете</a>
+                        <div class="about-menu">
+                            <ul>
+                                <li><a href="../about/about-us.html">О нас</a></li>
+                                <li><a href="../about/awards.html">Награды</a></li>
+                                <li><a href="../about/structure.html">Структура</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="projects">
+                        <a href="./projects.html" class="main">Проекты</a>
+                        <!-- <div class="projects-menu-hidden">
+                            <ul>
+                                <li><a href="../projects/first-project.html">Название</a></li>
+                                <li><a href="../projects/first-project.html">Название</a></li>
+                                <li><a href="../projects/second-project.html">Название</a></li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li class="documents">
+                        <a href="#" class="main">Документы</a>
+                        <div class="documents-menu-hidden">
+                            <ul>
+                                <li><a href="../documents/document-docx.html">Финансирование</a></li>
+                                <li><a href="../documents/support-programs.html">Программы поддержки</a></li>
+                                <li><a href="../documents/documents.html">Постановления</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../tenders.html">Тендеры</a></li>
+                    <li class="news">
+                        <a href="#" class="main">Медиа</a>
+                        <div class="news-menu-hidden">
+                            <ul>
+                                <li><a href="../media/news.html">Новости</a></li>
+                                <li><a href="../media/articles.html">Полезные статьи</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                  </ul>
+                </nav>
+                <div class="right-box">
+                    <div class="search">
+                        <button class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0"/></svg>
+                        </button>
+                        <input type="text" class="input" placeholder="Search">
+                    </div>
+                
+                    <div class="language-box"  id="languageSelect" >
+                        <div class="dropdown-item-selected" >
+                            <span>Рус</span>
+                            <img  src="../../assets/flags/Russsia.png" alt="">
+                        </div>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <div class="dropdown-item" onclick="selectLanguage('en')">
+                                <span>Eng</span>
+                                  <img src="../../assets/flags/En flag.png" alt="">
+                            </div>
+                            <div class="dropdown-item" onclick="selectLanguage('ru')">
+                                <span>Рус</span>
+                                  <img src="../../assets/flags/Russsia.png" alt="">
+                            </div>
+                            <div class="dropdown-item" onclick="selectLanguage('uz')">
+                                <span>O'z</span>
+                                <img src="../../assets/flags/Uz flag.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </header>  
+            </div>
+            <!--Mobile-->
+
+            <div class="mobile-header">
+                <div class="mobile-header__close">
+                    <button class="mobile-header__close-btn">
+                        <img src="../../assets/icons/Vector.svg" alt="">
+                    </button>
+                </div>
+        
+                <div class="mobile-header__head">
+                    <div class="mobile-header__head-logo">
+                        <img src="../../assets/лого.png" alt="">
+                    </div>
+                    <p>
+                        Государственный комитет ветеринарии и развития животноводства
+                    </p>
+                </div>
+        
+                <div class="mobile-header__links first">
+                    <h4 class="mobile-header__links-header">
+                        <a href="../../index.html">Главная</a>
+                    </h4>
+                </div>
+                <div class="mobile-header__links">
+                    <h4 class="mobile-header__links-header">
+                        О комитете
+                    </h4>
+                    <ul class="mobile-header__links-list">
+                        <li>
+                            <a href="../about/about-us.html">О нас</a>
+                        </li>
+                        <li>
+                            <a href="../about/awards.html">Награды</a>
+                        </li>
+                        <li>
+                            <a href="../about/structure.html">Структура</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-header__links">
+                    <h4 class="mobile-header__links-header">
+                        Проекты
+                    </h4>
+                    <ul class="mobile-header__links-list">
+                        <li>
+                            <a href="../projects/first-project.html">Название</a>
+                        </li>
+                        <li>
+                            <a href="../projects/second-project.html">Название</a>
+                        </li>
+                        <li>
+                            <a href="../projects/third-project.html">Название</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-header__links">
+                    <h4 class="mobile-header__links-header">
+                        Документы
+                    </h4>
+                    <ul class="mobile-header__links-list">
+                        <li>
+                            <a href="../documents/document-docx.html">Финансирование</a>
+                        </li>
+                        <li>
+                            <a href="../documents/support-programs.html">Программы поддержки</a>
+                        </li>
+                        <li>
+                            <a href="../documents/documents.html">Постановления</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-header__links fifth">
+                    <a href="../tenders.html">
+                        Тендеры
+                    </a>
+                </div>
+                <div class="mobile-header__links">
+                    <h4 class="mobile-header__links-header">
+                        Новости
+                    </h4>
+                    <ul class="mobile-header__links-list">
+                        <li>
+                            <a href="../media/news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="../media/articles.html">Полезные статьи</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-header__links">
+                    <h4 class="mobile-header__links-header">
+                        Контакты
+                    </h4>
+                    <ul class="mobile-header__links-list">
+                        <li>
+                            <a href="mailto:vetgov.uz@gmail.com">vetgov.uz@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+998 77 555 33 22">+998 77 555 33 22</a>
+                        </li>
+                        <li>
+                            <a href="tel:+998 77 555 22 22">+998 77 555 22 22</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--end mobile-->
+   <!-- -->
+    <div class="program-header">
+        <h2>Проекты</h2>
+    </div>
+    
+    <!-- <div class="scroll-container"> -->
+        
+        <div class="card-container">
+            <div class="card">
+                <img src="../../assets/лого.png" alt="Logo" class="card-logo">
+                <div class="card-content">
+                    <h2>Финансирование устойчивого развития сферы животноводства Республики Узбекистан с участием заемных средств ФАР</h2>
+                    <p>Страна: Республика Узбекистан<br>
+                        Заем АФД № CUG012018015<br>
+                        № пакета: № AFD/C3/LCS/01<br>
+                        г. Ташкент, Яккасарайский район, ул. Кушбеги, 22, 3-этаж (Отдел закупок)<br>
+                        Тел: (+998 97) 155 50 54 ; (+998 90) 940 55 12<br>
+                        Email: slsdp.procurement@gmail.com</p>
+                      <a href="./first-project.html">
+                        <button class="read-more">
+                            Читать
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#4D4477" d="M10.25 16.25a.74.74 0 0 1-.53-.25a.75.75 0 0 1 0-1.06l3-3l-3-3A.75.75 0 0 1 10.78 8l3.5 3.5a.75.75 0 0 1 0 1.06L10.78 16a.74.74 0 0 1-.53.25"/></svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="../../assets/лого.png" alt="Logo" class="card-logo">
+                <div class="card-content">
+                    <h2>Индивидуальный консультант для оказания услуг по разработке требований для бенефициаров кредитной линии в части энергосбережения в животноводстве</h2>
+                    <p>Страна: Республика Узбекистан<br>
+                        Заем № 7295-UZ<br>
+                        № пакета: SLSDP/IC/03<br>
+                        г. Ташкент, Яккасарайский район, ул. Кушбеги, 22, 3-этаж (Отдел закупок)<br>
+                        Тел: (+998 97) 155 50 54 ; (+998 90) 940 55 12<br>
+                        Email: slsdp.procurement@gmail.com</p>
+                        <a href="./second-project.html">
+                    <button class="read-more">
+                        Читать
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#4D4477" d="M10.25 16.25a.74.74 0 0 1-.53-.25a.75.75 0 0 1 0-1.06l3-3l-3-3A.75.75 0 0 1 10.78 8l3.5 3.5a.75.75 0 0 1 0 1.06L10.78 16a.74.74 0 0 1-.53.25"/></svg>
+                    </button>
+                </a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="../../assets/лого.png" alt="Logo" class="card-logo">
+                <div class="card-content">
+                    <h2>Развитие сектора животноводства (2-й этап)</h2>
+                    <p>Страна: Республика Узбекистан<br>
+                        Кредит МАР № 7295-UZ<br>
+                        № пакета: SLSDP/CQS/06<br>
+                        г. Ташкент, Яккасарайский район, ул. Кушбеги, 22, 3-этаж (Отдел закупок)<br>
+                        Тел: (+998 97) 155 50 54 ; (+998 90) 940 55 12<br>
+                        Email: slsdp.procurement@gmail.com</p>
+                        <a href="./third-project.html">
+                        <button class="read-more">
+                            Читать
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#4D4477" d="M10.25 16.25a.74.74 0 0 1-.53-.25a.75.75 0 0 1 0-1.06l3-3l-3-3A.75.75 0 0 1 10.78 8l3.5 3.5a.75.75 0 0 1 0 1.06L10.78 16a.74.74 0 0 1-.53.25"/></svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!--    -->
+    
+    <footer>
+        <div class="left-content">
+            <div class="top">
+                <img src="../../assets/logo.png" alt="logo">
+                <h2>Государственный комитет ветеринарии и развития животноводства</h2>
+            </div>
+            <div class="bottom">
+                <div class="adress">
+                    <span class="title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4c2.2 0 4 1.8 4 4c0 2.1-2.1 5.5-4 7.9c-1.9-2.5-4-5.8-4-7.9c0-2.2 1.8-4 4-4m0-2C8.7 2 6 4.7 6 8c0 4.5 6 11 6 11s6-6.6 6-11c0-3.3-2.7-6-6-6m0 4c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2m8 13c0 2.2-3.6 4-8 4s-8-1.8-8-4c0-1.3 1.2-2.4 3.1-3.2l.6.9c-1 .5-1.7 1.1-1.7 1.8c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5c0-.7-.7-1.3-1.8-1.8l.6-.9c2 .8 3.2 1.9 3.2 3.2"/></svg>
+                        Адрес
+                    </span>
+                    <p>Город Ташкент, Мирзо-улугбекский район, Карасу-2, 15</p>
+                </div>
+                <div class="contacts" >
+                    <span class="title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 256 256"><path fill="currentColor" d="m222.37 158.46l-47.11-21.11l-.13-.06a16 16 0 0 0-15.17 1.4a8 8 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92a16 16 0 0 0-9.51-16.62M176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40a.6.6 0 0 0 0 .12l21 47l-20.67 24.74a6 6 0 0 0-.57.77a16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14a8 8 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208"/></svg>
+                        Контакты
+                    </span>
+                    <p class="email">vetgov.uz@gmail.com</p>
+                    <p class="number">+998 77 555 33 22</p>
+                    <p class="number">+998 77 555 33 22</p>
+                </div>
+                <div class="socials">
+                    <span class="title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 24 24"><path fill="currentColor" d="m17 18l-5-2.18L7 18V5h10m0-2H7a2 2 0 0 0-2 2v16l7-3l7 3V5a2 2 0 0 0-2-2"/></svg>
+                        Социальные сети
+                    </span>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Telegram bot</a></p>
+                    <p><a href="#">Telegram</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li><a href="../about/about-us.html">О комитете</a></li>
+                <li><a href="../projects/first-project.html">Проекты</a></li>
+                <li><a href="../documents/document-docx.html">Документы</a></li>
+                <li><a href="../tenders.html">Тендеры</a></li>
+                <li><a href="#">Медиа</a></li>
+            </ul>
+        </div>
+    </footer> 
+    <script src="../../scripts/navbar.js"></script>
+    <script src="../../scripts/app.js"></script>
+
+
+</body>
+</html>
