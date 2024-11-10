@@ -7,7 +7,7 @@
 //  input.focus()
 // })
 
-let currentLanguage = 'uz';
+let currentLanguage = 'ru';
 
 function updateSelectedLanguage() {
     const selectedContainer = document.querySelector(".dropdown-item-selected");
@@ -48,10 +48,10 @@ function detectLanguageFromUrl() {
     if (['ru', 'en', 'uz'].includes(languageSegment)) {
         currentLanguage = languageSegment;
     } else {
-        pathSegments[1] = 'uz';
+        pathSegments[1] = 'ru';
         const defaultUrl = `${window.location.origin}${pathSegments.join('/')}`;
         window.history.replaceState({}, '', defaultUrl);
-        currentLanguage = 'uz';
+        currentLanguage = 'ru';
     }
 
     updateSelectedLanguage();
