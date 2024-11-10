@@ -70,8 +70,14 @@
 .structure__main-card-left{
     width: 19.0625vw;
     height: 12.5vw;
-    background-color: #f2f2f2;
+    overflow: hidden;
     border-radius: 0.8333vw;
+}
+
+.structure__main-card-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 640px){
