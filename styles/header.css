@@ -471,7 +471,7 @@ a .active{
 
   @media (max-width:640px) {
     .dropdown-item-selected {
-        padding: 2.5vw 1.2vw;
+        padding: 2.1vw 1.2vw;
         width: 10vw;
         display: flex;
         align-items: center;
