@@ -156,6 +156,7 @@ body{
         font-size: 12px;
         line-height: 17px;
         margin-left: 0;
+        text-align: start;
     }
 
     .image-section {
