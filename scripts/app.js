@@ -1,60 +1,60 @@
-// const search = document.querySelector(".search")
-// const btn = document.querySelector(".btn")
-// const input = document.querySelector(".input")
+const search = document.querySelector(".search")
+const btn = document.querySelector(".btn")
+const input = document.querySelector(".input")
 
-// btn.addEventListener("click", ()=>{
-//  search.classList.toggle("active")
-//  input.focus()
-// })
+btn.addEventListener("click", ()=>{
+ search.classList.toggle("active")
+ input.focus()
+})
 
 let currentLanguage = 'uz';
 
-// function updateSelectedLanguage() {
-//     const selectedContainer = document.querySelector(".dropdown-item-selected");
-//     const selectedText = selectedContainer.querySelector("span");
-//     const selectedFlag = selectedContainer.querySelector("img");
+function updateSelectedLanguage() {
+    const selectedContainer = document.querySelector(".dropdown-item-selected");
+    const selectedText = selectedContainer.querySelector("span");
+    const selectedFlag = selectedContainer.querySelector("img");
 
-//     const languages = {
-//         ru: { label: "Рус", svgPath: "/assets/flags/Russsia.png" },
-//         en: { label: "Eng", svgPath: "/assets/flags/En flag.png" },
-//         uz: { label: "O'z", svgPath: "/assets/flags/Uz flag.png" }
-//     };
+    const languages = {
+        ru: { label: "Рус", svgPath: "/assets/flags/Russsia.png" },
+        en: { label: "Eng", svgPath: "/assets/flags/En flag.png" },
+        uz: { label: "O'z", svgPath: "/assets/flags/Uz flag.png" }
+    };
 
-//     selectedText.textContent = languages[currentLanguage].label;
-//     selectedFlag.src = languages[currentLanguage].svgPath;
+    selectedText.textContent = languages[currentLanguage].label;
+    selectedFlag.src = languages[currentLanguage].svgPath;
 
-//     document.querySelectorAll(".dropdown-content .dropdown-item").forEach(item => {
-//         item.classList.remove("selected");
-//     });
-//     document.querySelector(`.dropdown-item[onclick="selectLanguage('${currentLanguage}')"]`).classList.add("selected");
-// }
+    document.querySelectorAll(".dropdown-content .dropdown-item").forEach(item => {
+        item.classList.remove("selected");
+    });
+    document.querySelector(`.dropdown-item[onclick="selectLanguage('${currentLanguage}')"]`).classList.add("selected");
+}
 
-// function selectLanguage(language) {
-//     currentLanguage = language;
-//     updateSelectedLanguage();
+function selectLanguage(language) {
+    currentLanguage = language;
+    updateSelectedLanguage();
 
-//     const pathSegments = window.location.pathname.split('/');
-//     pathSegments[1] = language;  
+    const pathSegments = window.location.pathname.split('/');
+    pathSegments[1] = language;  
 
-//     const newUrl = `${window.location.origin}${pathSegments.join('/')}`;
+    const newUrl = `${window.location.origin}${pathSegments.join('/')}`;
 
-//     window.location.href = newUrl;
-// }
+    window.location.href = newUrl;
+}
 
-// function detectLanguageFromUrl() {
-//     const pathSegments = window.location.pathname.split('/');
-//     const languageSegment = pathSegments[1];
+function detectLanguageFromUrl() {
+    const pathSegments = window.location.pathname.split('/');
+    const languageSegment = pathSegments[1];
 
     if (['ru', 'en', 'uz'].includes(languageSegment)) {
         currentLanguage = languageSegment;
     } else {
-        pathSegments[1] = 'ru';
+        pathSegments[1] = 'uz';
         const defaultUrl = `${window.location.origin}${pathSegments.join('/')}`;
         window.history.replaceState({}, '', defaultUrl);
-        currentLanguage = 'ru';
+        currentLanguage = 'uz';
     }
 
-//     updateSelectedLanguage();
-// }
+    updateSelectedLanguage();
+}
 
-// detectLanguageFromUrl();
+detectLanguageFromUrl();
