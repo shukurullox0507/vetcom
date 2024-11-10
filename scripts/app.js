@@ -7,7 +7,7 @@ btn.addEventListener("click", ()=>{
  input.focus()
 })
 
-let currentLanguage = 'ru';
+let currentLanguage = 'uz';
 
 function updateSelectedLanguage() {
     const selectedContainer = document.querySelector(".dropdown-item-selected");

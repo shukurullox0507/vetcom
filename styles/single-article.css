@@ -41,6 +41,29 @@
     }
 }
 
+.single-article__img-box{
+    width: 81.25vw;
+    height: 41.14vw;
+    border-radius: 1.041vw;
+    overflow: hidden;
+    margin-top: .9vw;
+}
+
+@media (max-width: 640px){
+    .single-article__img-box{
+        width: 80vw;
+        height: 40.51vw;
+        border-radius: 2.05vw;
+        margin-top: 1.4vw;
+    }
+}
+
+.single-article__img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .single-article__date{
     font-weight: 300;
     font-size: 0.9375vw;

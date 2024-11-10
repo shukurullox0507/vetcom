@@ -221,8 +221,11 @@ body {
         font-size: 9px;
         line-height: 1.1;
         position: absolute;
-        margin-bottom: -10px;
+        margin-bottom: -4vw;
         right: 10px;
        
+    }
+    .read-more svg{
+        width: 8vw;
     }
 }
