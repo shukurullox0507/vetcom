@@ -589,13 +589,11 @@
     }
     .article .article-description{
         display: block;
-        /* width: 95%; */
         font-size: 2vw;
-        font-weight: 300;
         line-height: 2.7vw;
-        text-align: left;
         word-break: break-word;
         overflow-wrap: break-word;
+        margin-top: 0;
     }
     .article .article-content .text-box .article-title{
         display: block;
@@ -606,6 +604,9 @@
         text-align: left;  
         word-break: break-word;
         overflow-wrap: break-word;
+    }
+    .article .more-btn{
+        font-size: 1.2vw;
     }
     .swiper-pagination-link{
         margin-top: 20px !important;
