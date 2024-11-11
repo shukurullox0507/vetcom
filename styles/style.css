@@ -303,7 +303,7 @@
     background: #F9FAFF;
     position: relative;
     margin-bottom: 1vw;
-    height: 18vw;
+    /* height: 18vw; */
 }
 .article-content{
     min-width: 100%;

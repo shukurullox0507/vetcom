@@ -14,46 +14,40 @@
         <header id="top-navbar">
             <svg id="burger" class="burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.001h18m-18 6h18m-18 6h18"/></svg>
             <div class="logo-images">
-            <img src="../../assets/logo.png" alt="logo image" class="logo">
-            <img src="../../assets/seond-logo.png" alt="" class="second-logo-header">
-        </div>
+                <a href="/">
+                   <img src="../../assets/лого.png" alt="main logo" class="logo">
+                    <img src="../../assets/seond-logo.png" alt="" class="second-logo-header"> 
+                </a>
+            </div>
             <nav>
               <ul id="menus">
-                <li><a href="/">Главная</a></li>
+                <li><a href="../../index.html" id="menu">Главная</a></li>
                 <li class="about">
-                    <a href="#" class="main">О комитете</a>
+                    <a href="javascript:void(0)" class="main">О комитете</a>
                     <div class="about-menu">
                         <ul>
                             <li><a href="../about/about-us.html">О нас</a></li>
-                            <li><a href="../about/awards.html">Награды</a></li>
                             <li><a href="../about/structure.html">Структура</a></li>
                         </ul>
                     </div>
                 </li>
                 
                 <li class="projects">
-                    <a href="#" class="main">Проекты</a>
-                    <div class="projects-menu-hidden">
-                        <ul>
-                            <li><a href="../projects/first-project.html">Названиеsadfsdafsadf sadfsadf asdfsadfasdf asdfsadf </a></li>
-                            <li><a href="../projects/first-project.html">Название</a></li>
-                            <li><a href="../projects/second-project.html">Название</a></li>
-                        </ul>
-                    </div>
+                    <a href="../projects/projects.html" class="main">Проекты</a>
                 </li>
                 <li class="documents">
-                    <a href="#" class="main">Документы</a>
+                    <a href="javascript:void(0)" class="main">Документы</a>
                     <div class="documents-menu-hidden">
                         <ul>
-                            <li><a href="../documents/document-docx.html">Финансирование</a></li>
+                            <!-- <li><a href="../documents/document-docx.html">Финансирование</a></li> -->
                             <li><a href="../documents/support-programs.html">Программы поддержки</a></li>
                             <li><a href="../documents/documents.html">Постановления</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Тендеры</a></li>
+                <li><a href="../tenders.html">Тендеры</a></li>
                 <li class="news">
-                    <a href="#" class="main">Медиа</a>
+                    <a href="javascript:void(0)" class="main">Медиа</a>
                     <div class="news-menu-hidden">
                         <ul>
                             <li><a href="../media/news.html">Новости</a></li>
@@ -65,30 +59,31 @@
               </ul>
             </nav>
             <div class="right-box">
-                <div class="search">
+                <!-- <div class="search">
                     <button class="btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0"/></svg>
                     </button>
                     <input type="text" class="input" placeholder="Search">
-                </div>
+                </div> -->
             
                 <div class="language-box"  id="languageSelect" >
                     <div class="dropdown-item-selected" >
                         <span>Рус</span>
-                        <img  src="../../assets/flags/Russsia.png" alt="">
+
+                        <img  src="./assets/flags/Russsia.png" alt="">
                     </div>
                     <div class="dropdown-content" id="dropdownContent">
                         <div class="dropdown-item" onclick="selectLanguage('en')">
                             <span>Eng</span>
-                              <img src="../../assets/flags/En flag.png" alt="">
+                              <img src="./assets/flags/En flag.png" alt="">
                         </div>
                         <div class="dropdown-item" onclick="selectLanguage('ru')">
                             <span>Рус</span>
-                              <img src="../../assets/flags/Russsia.png" alt="">
+                              <img src="./assets/flags/Russsia.png" alt="">
                         </div>
                         <div class="dropdown-item" onclick="selectLanguage('uz')">
                             <span>O'z</span>
-                            <img src="../../assets/flags/Uz flag.png" alt="">
+                            <img src="./assets/flags/Uz flag.png" alt="">
                         </div>
                     </div>
                 </div>

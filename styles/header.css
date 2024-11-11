@@ -471,28 +471,32 @@ a .active{
 
   @media (max-width:640px) {
     .dropdown-item-selected {
-        padding: 1.1vw 1.3vw;
+        padding: 2.1vw 1.2vw;
+        width: 10vw;
+        display: flex;
+        align-items: center;
+        gap: 1.9vw;
         border-radius: 2.7vw;
     }
     .dropdown-content{
-        padding: .3vw 1.2vw;
+        padding: 1.7vw 1.7vw;
     }
     .dropdown-item-selected svg{
-        width: 2vw;
+        width: 20vw;
         height: 2vw;
     }
     .language-box.active .dropdown-item-selected{
         border-radius: 8px 8px 0 0;
     }
     .dropdown-content .dropdown-item{
-        gap: .5vw;
+        gap: 1vw;
     }
     .dropdown-item, .dropdown-item-selected span{
-        font-size: 1.5vw;
+        font-size: 2.2vw;
         width: 3.1vw;
     }
     .dropdown-content.active{
-        gap: .2vw;
+        gap: 2.4vw;
         border-radius: 0 0 8px 8px;
     }
   }
