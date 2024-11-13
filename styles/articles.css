@@ -56,12 +56,6 @@
     text-decoration: none;
 }
 
-.articles__main-content .item a:hover,
-.articles__main-content .item a:focus,
-.articles__main-content .item a:visited {
-    text-decoration: none;
-}
-
 .articles__main-card{
     background-color: #F9FAFF;
     box-shadow: 0px 0px 0.78125vw 0px #00000040;
