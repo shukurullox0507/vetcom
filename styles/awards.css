@@ -13,8 +13,8 @@
     border-radius: 1.041vw;
     padding: 2.6vw 5.2vw;
     box-sizing: border-box;
-    word-break: break-all;
-    /* hyphens: auto; */
+    /* word-break: break-all; */
+    hyphens: auto;
 }
 
 @media (max-width: 640px){
