@@ -476,7 +476,7 @@ a .active{
         display: flex;
         align-items: center;
         gap: 1.9vw;
-        border-radius: 2.7vw;
+        border-radius: 2.1vw;
     }
     .dropdown-content{
         padding: 1.7vw 1.7vw;
@@ -486,7 +486,7 @@ a .active{
         height: 2vw;
     }
     .language-box.active .dropdown-item-selected{
-        border-radius: 8px 8px 0 0;
+        border-radius: 2.1vw 2.1vw 0 0;
     }
     .dropdown-content .dropdown-item{
         gap: 1vw;
@@ -497,6 +497,6 @@ a .active{
     }
     .dropdown-content.active{
         gap: 2.4vw;
-        border-radius: 0 0 8px 8px;
+        border-radius: 0 0 2.1vw 2.1vw;
     }
   }

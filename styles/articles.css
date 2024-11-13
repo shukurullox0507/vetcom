@@ -110,7 +110,8 @@
 .articles__main-card-info{
     color: #4D4477;
     margin-top: .2vw;
-    word-break: break-all;
+    /* word-break: break-all; */
+    hyphens: auto;
 }
 
 .articles__main-card-info p:first-child{
