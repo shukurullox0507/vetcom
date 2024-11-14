@@ -102,6 +102,13 @@ footer .right-content ul li a{
     cursor: pointer;
     text-decoration: underline;
 }
+footer .adress .title svg,
+footer .contacts .title svg,
+footer .socials .title svg {
+    width: 1.3vw; /* Adjust icon size for better alignment */
+    height: 1.3vw;
+    vertical-align: middle;
+}
 
 @media (max-width: 768px) {
     footer {
@@ -168,8 +175,8 @@ footer .right-content ul li a{
     footer .adress .title svg,
     footer .contacts .title svg,
     footer .socials .title svg {
-        width: 16px; /* Adjust icon size for better alignment */
-        height: 16px;
+        width: 4vw; /* Adjust icon size for better alignment */
+        height: 4vw;
         vertical-align: middle;
     }
 
