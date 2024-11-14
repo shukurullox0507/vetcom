@@ -41,7 +41,7 @@ footer .bottom{
 }
 footer .bottom .title{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-family:'Open Sans';
     font-size: 1.25vw;
     font-weight: 400;
@@ -108,6 +108,7 @@ footer .socials .title svg {
     width: 1.3vw; /* Adjust icon size for better alignment */
     height: 1.3vw;
     vertical-align: middle;
+    margin-right: 2px;
 }
 
 @media (max-width: 768px) {
