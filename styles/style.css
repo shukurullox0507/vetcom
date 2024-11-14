@@ -92,7 +92,7 @@
 }
 .second-section{
     display: flex;
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -195,7 +195,7 @@
     text-align: left;
     color:#4D4477;
     hyphens: auto;
-
+    margin-bottom: 3vw;
 }
 .press-section .swiper{
     width: 100%;
@@ -567,6 +567,10 @@
         margin-bottom: 6px;
         width: 100%;        
     }
+    .press-section .swiper{
+        width: 100%;
+        height: 55vw;
+    }
     .press-section .swiper-slide-content span{
         font-size: 1.7vw;
         line-height: 2.4vw;
@@ -683,8 +687,8 @@
         line-height: 2.6vw;
     }
     .links-section .swiper-slide-content{
-        width: 43vw;
-        height: 23vw;
+        width: 50vw;
+        height: 30vw;
     }
     .articles-section h2{
         font-size: 3vw;
