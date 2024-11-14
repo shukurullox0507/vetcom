@@ -14,6 +14,7 @@
     position: relative;
     top: 0;
     background-color: #fff;
+    margin-bottom: 2.3vw;
 }
 #top-navbar {
     position: fixed;
@@ -25,8 +26,12 @@
     align-items: center;
     z-index: 10;
     padding: 1.6vw 3vw ;
-    background: transparent;
+    background: white;
     transition: background-color 0.3s ease;
+    /* background-image: url('/assets/mobile-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
 }
 .logo-images a{
     color:transparent;
@@ -471,12 +476,13 @@ a .active{
 
   @media (max-width:640px) {
     .dropdown-item-selected {
-        padding: 2.1vw 1.2vw;
-        width: 10vw;
+        padding: 2.5vw 1.7vw;
+        width: 19vw;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 1.9vw;
-        border-radius: 2.1vw;
+        border-radius: 4.1vw;
     }
     .dropdown-content{
         padding: 1.7vw 1.7vw;
@@ -486,17 +492,24 @@ a .active{
         height: 2vw;
     }
     .language-box.active .dropdown-item-selected{
-        border-radius: 2.1vw 2.1vw 0 0;
+        border-radius: 4.1vw 4.1vw 0 0;
     }
     .dropdown-content .dropdown-item{
         gap: 1vw;
     }
     .dropdown-item, .dropdown-item-selected span{
-        font-size: 2.2vw;
-        width: 3.1vw;
+        font-size: 3.7vw;
+        width: 4.1vw;
     }
     .dropdown-content.active{
         gap: 2.4vw;
-        border-radius: 0 0 2.1vw 2.1vw;
+        border-radius: 0 0 4.1vw 4.1vw;
+    }
+    .dropdown-item-selected img, .dropdown-item img{
+        width: 4.5vw;
+        aspect-ratio: 1/1;
+    }
+    .dropdown-item{
+        height: 9vw;
     }
   }

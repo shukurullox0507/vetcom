@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: 'Open-sans',sans-serif;
 }
+body{
+    background-image: url('../assets/mobile-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .awards{
     width: 87.5vw;
     margin: 1.822vw auto 3.645vw auto;
@@ -13,7 +19,7 @@
     border-radius: 1.041vw;
     padding: 2.6vw 5.2vw;
     box-sizing: border-box;
-    /* word-break: break-all; */
+    word-break: break-word;
     hyphens: auto;
 }
 
