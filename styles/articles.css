@@ -44,6 +44,8 @@ body{
 
 .articles__main-content{
     width: 87.5vw;
+    min-height: 48vh;
+    height: auto;
     margin: 4.16vw auto;
     display: flex;
     flex-direction: column;
