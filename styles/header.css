@@ -28,6 +28,10 @@
     padding: 1.6vw 3vw ;
     background: white;
     transition: background-color 0.3s ease;
+    /* background-image: url('/assets/mobile-header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
 }
 .logo-images a{
     color:transparent;
