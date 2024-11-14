@@ -19,7 +19,7 @@ body{
     border-radius: 1.041vw;
     padding: 2.6vw 5.2vw;
     box-sizing: border-box;
-    /* word-break: break-all; */
+    word-break: break-word;
     hyphens: auto;
 }
 
