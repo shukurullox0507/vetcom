@@ -127,6 +127,13 @@ body{
     line-height: 1.5;
     margin: 0; 
 }
+.project-info strong {
+    color: #383174;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
 
 
 
