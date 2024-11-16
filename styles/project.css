@@ -136,7 +136,7 @@ body {
     color: #4D4477;
     position: absolute;
     bottom: 5%;
-    right: 5%;
+    right: 1%;
     width: 100%;
     justify-content: end;
     margin-top: 1.8vw;
@@ -223,9 +223,10 @@ body {
         position: absolute;
         margin-bottom: -4vw;
         right: 10px;
-       
+       display: none;
     }
     .read-more svg{
         width: 8vw;
+        display: none;
     }
 }
