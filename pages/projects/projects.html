@@ -212,7 +212,7 @@
     <!-- <div class="scroll-container"> -->
         
         <div class="card-container">
-            <div class="card">
+            <div class="card" onclick="navigateToPage('./first-project.html')">
                 <img src="../../assets/лого.png" alt="Logo" class="card-logo">
                 <div class="card-content">
                     <h2>Финансирование устойчивого развития сферы животноводства Республики Узбекистан с участием заемных средств ФАР</h2>
@@ -269,7 +269,11 @@
                 </div>
             </div>
         </div>
-        
+        <script>
+            function navigateToPage(url) {
+                window.location.href = url;
+            }
+        </script>
         <!--    -->
     
     <footer>
