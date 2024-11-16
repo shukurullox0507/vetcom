@@ -105,8 +105,8 @@ footer .right-content ul li a{
 footer .adress .title svg,
 footer .contacts .title svg,
 footer .socials .title svg {
-    width: 1.3vw; /* Adjust icon size for better alignment */
-    height: 1.3vw;
+    width: 25px !important; /* Adjust icon size for better alignment */
+    height: 25px !important;
     vertical-align: middle;
     margin-right: 2px;
 }
